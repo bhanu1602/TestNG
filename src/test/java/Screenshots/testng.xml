@@ -1,0 +1,36 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Screenshots">
+    <listeners>
+        <listener class-name="Screenshots.ITestListener"/>
+    </listeners>
+    <test name="Test1">
+        <classes>
+            <class name="Screenshots.TestClass">
+                <methods>
+                    <include name="testGoogle"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test2">
+        <classes>
+            <class name="Screenshots.TestClass">
+                <methods>
+                    <include name="testFacebook"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="Test3">
+        <classes>
+            <class name="Screenshots.TestClass">
+                <methods>
+                    <include name="testOrangeHRM"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
